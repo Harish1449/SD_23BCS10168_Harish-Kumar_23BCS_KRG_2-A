@@ -1,0 +1,334 @@
+<mxfile host="Electron">
+  <diagram id="talentflow-ai-sd" name="TalentFlow AI - System Design">
+    <mxGraphModel dx="3073" dy="1538" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tf-t1" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;TalentFlow AI:&lt;/b&gt; AI-Powered Job Recruitment Platform — System Design" vertex="1">
+          <mxGeometry height="30" width="480" x="-250" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-t2" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="An intelligent job portal connecting students/job seekers with recruiters using AI-based resume parsing and skill-match scoring." vertex="1">
+          <mxGeometry height="30" width="550" x="-250" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr-hdr" parent="1" style="whiteSpace=wrap;html=1;" value="Functional Requirements" vertex="1">
+          <mxGeometry height="30" width="200" x="-240" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr1" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="1. Students and Recruiters should be able to register and login (role-based)" vertex="1">
+          <mxGeometry height="30" width="440" x="-235" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr2" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="2. Students should be able to upload their resume (PDF) for AI-based extraction" vertex="1">
+          <mxGeometry height="30" width="440" x="-235" y="143" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr3" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="3. System should auto-extract skills, education &amp; experience from resume (AI/NLP)" vertex="1">
+          <mxGeometry height="30" width="460" x="-235" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr4" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="4. Recruiters should be able to post, manage and close job listings" vertex="1">
+          <mxGeometry height="30" width="410" x="-235" y="213" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr5" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="5. Students should be able to search, filter and browse job listings" vertex="1">
+          <mxGeometry height="30" width="400" x="-235" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr6" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="6. System should compute an AI Match Score (0-100) for each student-job pair" vertex="1">
+          <mxGeometry height="30" width="460" x="-235" y="283" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr7" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="7. Students should be able to apply for jobs with optional cover letter" vertex="1">
+          <mxGeometry height="30" width="420" x="-235" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr8" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="8. Recruiters should be able to view applicants and shortlist / select / reject" vertex="1">
+          <mxGeometry height="30" width="450" x="-235" y="353" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr9" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="9. Students should be able to track all applications and their statuses" vertex="1">
+          <mxGeometry height="30" width="430" x="-235" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr10" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="10. System must send in-app notifications on status changes (Shortlisted/Rejected/Selected)" vertex="1">
+          <mxGeometry height="30" width="520" x="-235" y="423" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr11" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="11. System should display trending jobs and show applicant/shortlist counts per job" vertex="1">
+          <mxGeometry height="30" width="480" x="-235" y="458" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-fr12" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="12. JWT-based session management with refresh token support" vertex="1">
+          <mxGeometry height="30" width="390" x="-235" y="493" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-nfr-hdr" parent="1" style="whiteSpace=wrap;html=1;" value="Non-Functional Requirements" vertex="1">
+          <mxGeometry height="30" width="200" x="-240" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-nfr1" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="1. Target Scale: 100,000 students and 10,000 recruiters; 50,000 active jobs" vertex="1">
+          <mxGeometry height="30" width="460" x="-235" y="598" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-nfr2" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="2. CAP Theorem: Availability over Consistency — Eventual Consistency for notifications/stats" vertex="1">
+          <mxGeometry height="30" width="510" x="-235" y="633" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-nfr3" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="3. Latency: &lt;200ms for job search; &lt;2s for AI resume parsing" vertex="1">
+          <mxGeometry height="30" width="400" x="-235" y="668" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-nfr4" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="4. Security: JWT + BCrypt, HTTPS, CORS protection, role-based access control" vertex="1">
+          <mxGeometry height="30" width="460" x="-235" y="703" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-nfr5" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="5. Scalability: Horizontally scalable Spring Boot, MongoDB Atlas auto-sharding" vertex="1">
+          <mxGeometry height="30" width="460" x="-235" y="738" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-nfr6" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="6. Reliability: 99.9% uptime SLA; deployed on Render (cloud); MongoDB Atlas with backups" vertex="1">
+          <mxGeometry height="30" width="500" x="-235" y="773" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-ce-hdr" parent="1" style="whiteSpace=wrap;html=1;" value="Core Entities" vertex="1">
+          <mxGeometry height="30" width="200" x="-240" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-ce1" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="1. User (Student / Recruiter)" vertex="1">
+          <mxGeometry height="30" width="200" x="-235" y="878" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-ce2" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="2. Job" vertex="1">
+          <mxGeometry height="30" width="60" x="-235" y="911" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-ce3" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="3. Application" vertex="1">
+          <mxGeometry height="30" width="110" x="-235" y="944" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-ce4" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="4. Resume" vertex="1">
+          <mxGeometry height="30" width="80" x="-235" y="977" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-ce5" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="5. Notification" vertex="1">
+          <mxGeometry height="30" width="100" x="-235" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-hdr" parent="1" style="whiteSpace=wrap;html=1;" value="API Endpoints" vertex="1">
+          <mxGeometry height="30" width="200" x="-240" y="1075" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-auth-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;Auth Controller&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="-235" y="1118" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-a1" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[POST] /api/auth/signup" vertex="1">
+          <mxGeometry height="30" width="190" x="-235" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-a1b" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="req: { fullName, email, password, phone, role, companyName? }" vertex="1">
+          <mxGeometry height="30" width="400" x="-215" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-a1c" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="res: { success, user, accessToken, refreshToken }" vertex="1">
+          <mxGeometry height="30" width="350" x="-215" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-a2" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[POST] /api/auth/login  req: { email, password }  res: { accessToken, refreshToken, user }" vertex="1">
+          <mxGeometry height="30" width="530" x="-235" y="1245" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-a3" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[POST] /api/auth/refresh  req: { refreshToken }  res: { accessToken }" vertex="1">
+          <mxGeometry height="30" width="430" x="-235" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-a4" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/auth/profile  res: { user profile data } [Auth required]" vertex="1">
+          <mxGeometry height="30" width="420" x="-235" y="1315" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-a5" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[PUT] /api/auth/profile  req: { profile fields }  res: { updated user } [Auth required]" vertex="1">
+          <mxGeometry height="30" width="480" x="-235" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-job-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;Job Controller&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="130" x="-235" y="1395" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-j1" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/jobs  res: List&lt;JobDTO&gt; (all open jobs)" vertex="1">
+          <mxGeometry height="30" width="370" x="-235" y="1428" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-j2" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/jobs/{id}  res: JobDTO (job detail)" vertex="1">
+          <mxGeometry height="30" width="320" x="-235" y="1463" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-j3" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/jobs/search?keyword={kw}  res: List&lt;JobDTO&gt; (MongoDB text search)" vertex="1">
+          <mxGeometry height="30" width="460" x="-235" y="1498" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-j4" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/jobs/trending  res: List&lt;JobDTO&gt; (top jobs by applicant count)" vertex="1">
+          <mxGeometry height="30" width="440" x="-235" y="1533" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-j5" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/jobs/{id}/check-applied  res: { hasApplied: bool } [Auth required]" vertex="1">
+          <mxGeometry height="30" width="450" x="-235" y="1568" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-res-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;Resume Controller&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="-235" y="1613" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-r1" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[POST] /api/resumes/upload  req: multipart/form-data (PDF)  res: { resumeId, extractedSkills }" vertex="1">
+          <mxGeometry height="30" width="550" x="-235" y="1648" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-r2" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/resumes/{id}  res: Resume (metadata + extracted data)" vertex="1">
+          <mxGeometry height="30" width="400" x="-235" y="1683" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-r3" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/resumes/{id}/parse  res: { extractedSkills, education, experience } (AI re-parse)" vertex="1">
+          <mxGeometry height="30" width="510" x="-235" y="1718" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-r4" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/resumes/user/latest  res: Resume (current user&#39;s latest resume) [Auth]" vertex="1">
+          <mxGeometry height="30" width="460" x="-235" y="1753" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-r5" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/resumes/{id}/download  res: PDF binary stream" vertex="1">
+          <mxGeometry height="30" width="380" x="-235" y="1788" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-app-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;Application Controller&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="180" x="-235" y="1833" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-ap1" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[POST] /api/applications/apply  req: { jobId, coverLetter }  res: { applicationId, matchScore, status }" vertex="1">
+          <mxGeometry height="30" width="580" x="-235" y="1868" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-ap1b" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="   [AI Match Score = Jaccard Similarity(student skills ∩ job requiredSkills) * 100]" vertex="1">
+          <mxGeometry height="30" width="490" x="-215" y="1898" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-ap2" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/applications/my-applications  res: List&lt;ApplicationWithJobDTO&gt; [Student]" vertex="1">
+          <mxGeometry height="30" width="470" x="-235" y="1933" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-ap3" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/applications/{id}  res: Application detail" vertex="1">
+          <mxGeometry height="30" width="330" x="-235" y="1968" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-ap4" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/applications/stats/student  res: { applied, shortlisted, selected, rejected } counts" vertex="1">
+          <mxGeometry height="30" width="500" x="-235" y="2003" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-ap5" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/applications/stats/recruiter/job/{jobId}  res: stats by status [Recruiter]" vertex="1">
+          <mxGeometry height="30" width="480" x="-235" y="2038" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-rec-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;Recruiter Controller&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="180" x="-235" y="2083" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-rec1" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[POST] /api/recruiter/jobs  req: { title, description, skills[], salary, jobType, ... }  res: Job" vertex="1">
+          <mxGeometry height="30" width="530" x="-235" y="2118" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-rec2" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/recruiter/my-jobs  res: List&lt;JobDTO&gt; (recruiter&#39;s own jobs)" vertex="1">
+          <mxGeometry height="30" width="410" x="-235" y="2153" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-rec3" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[GET] /api/recruiter/jobs/{jobId}/applicants  res: List (applicants + scores + resume data)" vertex="1">
+          <mxGeometry height="30" width="510" x="-235" y="2188" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-rec4" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[PUT] /api/recruiter/applications/{appId}/shortlist  res: Application (triggers notification)" vertex="1">
+          <mxGeometry height="30" width="510" x="-235" y="2223" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-rec5" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[PUT] /api/recruiter/applications/{appId}/select  res: Application (triggers notification)" vertex="1">
+          <mxGeometry height="30" width="510" x="-235" y="2258" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-api-rec6" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="[PUT] /api/recruiter/applications/{appId}/reject  res: Application (triggers notification)" vertex="1">
+          <mxGeometry height="30" width="510" x="-235" y="2293" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-hld-hdr" parent="1" style="whiteSpace=wrap;html=1;" value="High Level Design" vertex="1">
+          <mxGeometry height="30" width="200" x="-190" y="2368" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-student-icon" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.users;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="-900" y="2450" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-student-lbl" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="Students" vertex="1">
+          <mxGeometry height="30" width="70" x="-905" y="2510" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-recruiter-icon" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.users;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="-900" y="2545" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-recruiter-lbl" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="Recruiters" vertex="1">
+          <mxGeometry height="30" width="70" x="-905" y="2605" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-clients-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;Clients&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="-905" y="2630" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-react" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;React.js Frontend&lt;br&gt;(Vite + TailwindCSS)&lt;br&gt;Deployed on Render&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="160" x="-760" y="2505" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-e-s-fe" edge="1" parent="1" source="tf-student-icon" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="tf-react">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-e-r-fe" edge="1" parent="1" source="tf-recruiter-icon" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="tf-react">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-apigw-icon" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.iot_device_gateway;" value="" vertex="1">
+          <mxGeometry height="90" width="96" x="-535" y="2493" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-apigw-lbl2" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;API Gateway&lt;/b&gt;&lt;br&gt;(Spring Security)&lt;br&gt;- JWT Validation&lt;br&gt;- CORS&lt;br&gt;- Role Auth" vertex="1">
+          <mxGeometry height="90" width="120" x="-547" y="2587" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-e-fe-gw" edge="1" parent="1" source="tf-react" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="tf-apigw-icon">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-backend-container" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="310" width="250" x="-380" y="2430" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-backend-title" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;Spring Boot Backend&lt;/b&gt; (Java 17)&lt;br&gt;Deployed on Render" vertex="1">
+          <mxGeometry height="40" width="210" x="-375" y="2435" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-svc-auth" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;Auth Service&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="100" x="-370" y="2490" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-svc-job" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;Job Service&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="100" x="-240" y="2490" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-svc-app" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;Application Svc&lt;br&gt;(+ AI Scoring)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="45" width="110" x="-370" y="2545" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-svc-resume" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;Resume Svc&lt;br&gt;(+ AI Parser)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="45" width="100" x="-240" y="2545" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-svc-notif" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;Notification Service&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="140" x="-355" y="2610" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-svc-rec" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;Recruiter Service&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="110" x="-370" y="2665" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-svc-sec" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;Security / JWT&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="100" x="-240" y="2665" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-e-gw-be" edge="1" parent="1" source="tf-apigw-icon" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="tf-backend-container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-mongo-icon" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.postgre_sql_instance;fillColor=#2E73B8;gradientColor=none;" value="" vertex="1">
+          <mxGeometry height="65" width="60" x="-77" y="2563" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-mongo-lbl2" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;MongoDB Atlas&lt;/b&gt;&lt;br&gt;Collections:&lt;br&gt;users / jobs /&lt;br&gt;applications /&lt;br&gt;resumes /&lt;br&gt;notifications" vertex="1">
+          <mxGeometry height="100" width="120" x="-97" y="2630" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-e-be-db" edge="1" parent="1" source="tf-backend-container" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="tf-mongo-icon">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-ai-parser" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;AI Resume Parser&lt;br&gt;(Apache PDFBox +&lt;br&gt;NLP Keyword&lt;br&gt;Extraction)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="175" x="-390" y="2815" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-ai-match" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;AI Match Score&lt;br&gt;(Jaccard Similarity&lt;br&gt;on Skills Sets)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="165" x="-200" y="2795" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-e-rsvc-ai" edge="1" parent="1" source="tf-svc-resume" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#d79b00;" target="tf-ai-parser">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-e-asvc-ai" edge="1" parent="1" source="tf-svc-app" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#d79b00;" target="tf-ai-match">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-filestorage" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;Resume Files&lt;br&gt;(MongoDB&lt;br&gt;Binary / GridFS)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="30" y="2570" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-e-rsvc-fs" edge="1" parent="1" source="tf-svc-resume" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="tf-filestorage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-notif-note" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="Notification triggers on: APPLY → Recruiter notified&lt;br&gt;SHORTLIST/SELECT/REJECT → Student notified" vertex="1">
+          <mxGeometry height="40" width="370" x="-555" y="2770" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-hdr" parent="1" style="whiteSpace=wrap;html=1;" value="Database Design — MongoDB Collections" vertex="1">
+          <mxGeometry height="30" width="260" x="420" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-u-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;users&lt;/b&gt; collection  (Unified Student + Recruiter)" vertex="1">
+          <mxGeometry height="30" width="310" x="425" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-u" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="_id: ObjectId [PK]&lt;br&gt;fullName: String&lt;br&gt;email: String [Unique Index]&lt;br&gt;password: String (BCrypt)&lt;br&gt;phone: String&lt;br&gt;role: String [STUDENT|RECRUITER] [Index]&lt;br&gt;— Student fields —&lt;br&gt;skills: [String]  education: String&lt;br&gt;experience: String  resumeId: String (→resumes)&lt;br&gt;profilePhoto: String (URL)&lt;br&gt;profileCompletion: Double&lt;br&gt;— Recruiter fields —&lt;br&gt;companyName: String  companyWebsite: String&lt;br&gt;companyDescription: String  companyLocation: String&lt;br&gt;isActive: Boolean  createdAt: Date  updatedAt: Date" vertex="1">
+          <mxGeometry height="260" width="295" x="425" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-j-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;jobs&lt;/b&gt; collection" vertex="1">
+          <mxGeometry height="30" width="130" x="755" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-j" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="_id: ObjectId [PK]&lt;br&gt;recruiterId: String (→users) [Index]&lt;br&gt;companyName: String&lt;br&gt;companyDescription: String&lt;br&gt;companyWebsite: String&lt;br&gt;companyLogo: String (URL)&lt;br&gt;title: String [Text Index]&lt;br&gt;description: String [Text Index]&lt;br&gt;location: String [Index]&lt;br&gt;salary: Long&lt;br&gt;jobType: String (Full Time|Part Time|Contract|Remote)&lt;br&gt;experienceRequired: Integer&lt;br&gt;requiredSkills: [String]&lt;br&gt;requirements: [String]&lt;br&gt;applicantCount: Integer&lt;br&gt;shortlistedCount: Integer&lt;br&gt;isClosed: Boolean [Index]&lt;br&gt;createdAt: Date  updatedAt: Date" vertex="1">
+          <mxGeometry height="265" width="290" x="755" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-a-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;applications&lt;/b&gt; collection" vertex="1">
+          <mxGeometry height="30" width="170" x="425" y="432" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-a" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="_id: ObjectId [PK]&lt;br&gt;jobId: String (→jobs) [Index]&lt;br&gt;userId: String (→users) [Index]&lt;br&gt;[Unique compound: (jobId + userId)]&lt;br&gt;status: String [Index]&lt;br&gt;  APPLIED | SHORTLISTED | INTERVIEW | SELECTED | REJECTED&lt;br&gt;matchScore: Integer (0–100, AI-computed)&lt;br&gt;coverLetter: String&lt;br&gt;resumeId: String (→resumes)&lt;br&gt;notes: String (recruiter&#39;s notes)&lt;br&gt;appliedAt: Date  shortlistedAt: Date&lt;br&gt;interviewAt: Date  selectedAt: Date&lt;br&gt;rejectedAt: Date&lt;br&gt;createdAt: Date  updatedAt: Date" vertex="1">
+          <mxGeometry height="225" width="295" x="425" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-r-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;resumes&lt;/b&gt; collection" vertex="1">
+          <mxGeometry height="30" width="150" x="755" y="432" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-r" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="_id: ObjectId [PK]&lt;br&gt;userId: String (→users) [Unique Index]&lt;br&gt;filename: String&lt;br&gt;fileUrl: String&lt;br&gt;fileSize: Long&lt;br&gt;fileData: Binary (raw PDF bytes)&lt;br&gt;— AI-Extracted Fields —&lt;br&gt;extractedSkills: [String]&lt;br&gt;extractedEducation: String&lt;br&gt;extractedExperience: String&lt;br&gt;uploadedAt: Date  updatedAt: Date" vertex="1">
+          <mxGeometry height="180" width="290" x="755" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-n-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;notifications&lt;/b&gt; collection" vertex="1">
+          <mxGeometry height="30" width="170" x="425" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-n" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="_id: ObjectId [PK]&lt;br&gt;userId: String (→users) [Index] (recipient)&lt;br&gt;senderId: String (→users, optional)&lt;br&gt;type: String (APPLIED|SHORTLISTED|SELECTED|REJECTED|...)&lt;br&gt;title: String&lt;br&gt;message: String&lt;br&gt;icon: String (CSS icon class)&lt;br&gt;applicationId: String (→applications)&lt;br&gt;jobId: String (→jobs)&lt;br&gt;jobTitle: String&lt;br&gt;senderName: String  senderEmail: String&lt;br&gt;senderRole: String&lt;br&gt;isRead: Boolean [Index]&lt;br&gt;createdAt: Date  readAt: Date" vertex="1">
+          <mxGeometry height="235" width="295" x="425" y="753" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-idx-hdr" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="&lt;b&gt;Key Indexes &amp; Relations&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="755" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="tf-db-idx" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="users.email → Unique Ascending Index&lt;br&gt;users.role → Ascending Index&lt;br&gt;jobs.recruiterId → Ascending Index&lt;br&gt;jobs.(title+description) → MongoDB Text Index&lt;br&gt;jobs.location → Ascending Index&lt;br&gt;jobs.isClosed → Ascending Index&lt;br&gt;applications.jobId → Ascending Index&lt;br&gt;applications.userId → Ascending Index&lt;br&gt;applications.(jobId+userId) → Unique Compound&lt;br&gt;applications.status → Ascending Index&lt;br&gt;resumes.userId → Unique Ascending Index&lt;br&gt;notifications.userId → Ascending Index&lt;br&gt;notifications.isRead → Ascending Index" vertex="1">
+          <mxGeometry height="215" width="295" x="755" y="753" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
