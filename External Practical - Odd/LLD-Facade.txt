@@ -1,0 +1,73 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class StockService
+{
+public:
+    bool checkAvailability(const string &item, int qty)
+    {
+        return qty <= 10;
+    }
+};
+
+class PaymentGateway
+{
+public:
+    bool processPayment(double amount)
+    {
+        return amount > 0;
+    }
+};
+
+class PaymentService
+{
+public:
+    bool makePayment(double amount)
+    {
+        PaymentGateway gateway;
+        return gateway.processPayment(amount);
+    }
+};
+
+class EmailService
+{
+public:
+    void sendEmail(const string &user)
+    {
+        cout << "Email sent to " << user << endl;
+    }
+};
+
+class OrderFacade
+{
+    StockService stock;
+    PaymentService payment;
+    EmailService email;
+
+public:
+    void placeOrder(string user, string item, int qty, double amount)
+    {
+        if (!stock.checkAvailability(item, qty))
+        {
+            cout << "Stock not available" << endl;
+            return;
+        }
+
+        if (!payment.makePayment(amount))
+        {
+            cout << "Payment failed" << endl;
+            return;
+        }
+
+        email.sendEmail(user);
+        cout << "Order placed successfully" << endl;
+    }
+};
+
+int main()
+{
+    OrderFacade order;
+    order.placeOrder("harish@gmail.com", "Laptop", 2, 50000);
+    return 0;
+}
